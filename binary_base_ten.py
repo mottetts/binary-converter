@@ -3,14 +3,14 @@
 #Created in Python 3.6
 
 def binary(n):
-    exp = 0
+    x = 0
     binlist = []
-    while 2**exp <= n:
-        if n % 2**(exp+1) == 0:
+    while 2**x <= n:
+        if n % 2**(x+1) == 0:
             binlist.insert(0,0)
         else:
             binlist.insert(0,1)
-            n = n - 2**exp
+            n = n - 2**x
         exp += 1
     return binlist
 
@@ -20,4 +20,4 @@ try:
     for i in outnum:
         print(i, end='')
 except ValueError:
-    print('Invalid input')
+    print('Invalid: input must be whole number')
