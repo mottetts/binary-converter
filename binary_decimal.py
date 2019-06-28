@@ -20,4 +20,4 @@ try:
     for i in outnum:
         print(i, end='')
 except ValueError:
-    print('Invalid: input must be whole number')
+    print('Invalid: please enter whole number')
