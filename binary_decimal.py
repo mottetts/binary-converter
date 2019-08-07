@@ -11,7 +11,7 @@ def binary(n):
         else:
             binlist.insert(0,1)
             n = n - 2**x
-        exp += 1
+        x += 1
     return binlist
 
 try:
